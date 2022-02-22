@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Agenda</title>
+</head>
+<body>
+    <div class="container">
+        <form accept="#">
+            <div>
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" id="nombre" required>
+            </div>
+            <div>
+                <label for="apellido">Apellido</label>
+                <input type="text" name="apellido" id="apellido" required>
+            </div>
+            <div>
+                <label for="telefono">Telefono</label>
+                <input type="number" name="telefono" id="telefono" required>
+            </div>
+            <br>
+            <button onclick="save()" type="button">Guardar en agenda</button>
+        </form>
+    </div>
+    <div class="container2"> 
+        <div id="containerJS">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
